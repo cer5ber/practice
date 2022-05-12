@@ -6,4 +6,6 @@ p
     font-size: 30px;
     color: red;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: serif;
 }
