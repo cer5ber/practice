@@ -1,27 +1,21 @@
-.main
+.big_block
 {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-    border-radius: 10px;
     width: 500px;
     height: 300px;
-}
-.main_block
-{
+    background-color: blueviolet;
     display: flex;
-   justify-content: center;
-   align-items: center;
-    
+    justify-content: center;
+    align-items: center;
 }
-.block2
-{
+.mini_block{
+    
     width: 200px;
     height: 100px;
-    background-color: grey;
+    background-color: white;
+    text-align:center;
 }
 button
 {
-    margin: 15px;
+    padding: 10px;
+    margin-left: 20px;
 }

@@ -1,15 +1,20 @@
-let colors = ['red', 'blue','yellow']
-var text =['Привет','Добрый день','Доброе утро','Спокойной ночи','Приятного аппетита','Всего доброго','',]
+let btnRandom = document.querySelector('button');
+let result = document.querySelector('h1');
 
+let words = ['Hello','Good buy','Thank you'];
 
+function getRandomNumber(min, max) {
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+    
+    return result;
+}
 
-function randAccess(arr){
-    return arr.splice([Math.floor(Math.random()*arr.length)],1)
-  }
-  
-let colors = ['red', 'blue','yellow']
-var text =['Привет','Добрый день','Доброе утро','Спокойной ночи','Приятного аппетита','Всего доброго','',]
-  
-  color.forEach(function(item, index){
-      console.log(index + " " + item + ":" + randAccess(animal));
-  })
+console.log(words)
+
+btnRandom.addEventListener ('click', () => {
+    let index = getRandomNumber(0, words.length-1);
+    result.innerText = words[index];
+
+});
