@@ -14,7 +14,7 @@
         </div>
             <div class="buttons">
                 <button id="change" onclick="newColor()">Нажми</button>
-                <button>Очистить</button>
+                <button>Удалить</button>
             </div>
     </div>
 
@@ -24,10 +24,13 @@
     </div>
 
 <script src="script.js"></script>
+
 <script>
+
+
     var btn = document.getElementById('change')
     var text = document.getElementById('colour')
-    const back = document.getElementById('back')
+    var div = document.getElementById('#mini');
 
 function newColor() {
   let symbols, color;
@@ -45,6 +48,6 @@ function newColor() {
 }
 
 </script>
-   
+
 </body>
 </html>
