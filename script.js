@@ -21,6 +21,6 @@ btnRandom.addEventListener ('click', () => {
 
 
 
-
+function 
 
 
