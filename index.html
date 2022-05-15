@@ -4,21 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кликер</title>
+    <title>просто</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="big_block">
-    <div class="mini_block">
-        <h1></h1>
-    </div>
-        <div class="buttons">
-            <button>Сгенерировать</button>
-            <button>Очистить</button>
+        <div class="mini_block" id="mini">
+            <h1></h1>
         </div>
-</div>
+            <div class="buttons">
+                <button id="change" onclick="newColor()">Нажми</button>
+                <button>Очистить</button>
+            </div>
+    </div>
+
+    <div class="back">
+       
+    
+    </div>
 
 <script src="script.js"></script>
+<script>
+    var btn = document.getElementById('change')
+    var text = document.getElementById('colour')
+    const back = document.getElementById('back')
+
+function newColor() {
+  let symbols, color;
+    symbols = '0123456789ABCDEF';
+
+    color = '#';
+    for (let i = 0; i < 6; i++) {
+        color = color + symbols[Math.floor(Math.random() * 16)];
+    }
+
+
+    document.body.style.background = color;
+    btn.style.color = color;
+    text.innerText = color;
+}
+
+</script>
    
 </body>
 </html>

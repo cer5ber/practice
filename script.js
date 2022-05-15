@@ -1,7 +1,9 @@
 let btnRandom = document.querySelector('button');
 let result = document.querySelector('h1');
+let block = document.querySelector('#mini')
 
-let words = ['Hello','Good buy','Thank you'];
+let colors = ['red','blue','orange']
+let words = ['Привет','Добрый день','До свидания','Доброе утро','Cпокойной ночи','Пока'];
 
 function getRandomNumber(min, max) {
     let step1 = max - min + 1;
@@ -11,10 +13,14 @@ function getRandomNumber(min, max) {
     return result;
 }
 
-console.log(words)
-
 btnRandom.addEventListener ('click', () => {
-    let index = getRandomNumber(0, words.length-1);
+    let index = getRandomNumber(0,words.length-1);
     result.innerText = words[index];
 
 });
+
+
+
+
+
+
