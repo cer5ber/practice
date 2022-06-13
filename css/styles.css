@@ -1,0 +1,575 @@
+* {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    margin: 0px 240px;
+  }
+}
+
+header {
+  margin: 0px 250px;
+  height: 700px;
+}
+
+.header_img {
+  position: absolute;
+  display: flex;
+  z-index: -1;
+}
+.header_image {
+  width: 1440px;
+  height: 700px;
+}
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    margin: 0px 10px;
+  }
+  .header_img img {
+    margin-left: -10px;
+  }
+}
+.header_logo {
+  font-family: "MotserratBold";
+  font-size: 20px;
+  color: white;
+  padding-top: 50px;
+  text-transform: uppercase;
+  position: absolute;
+}
+@media screen and (max-width: 770px) {
+  header {
+    margin: 0px 50px;
+    max-width: 670px;
+  }
+  .header_logo {
+    font-size: 20px;
+  }
+  .header_image {
+    overflow: hidden;
+  }
+  .header_img {
+    margin-left: -10px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  float: right;
+  margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .header_logo {
+    margin-top: 120px;
+  }
+  body {
+    max-width: 600px;
+    overflow: hidden;
+  }
+  header {
+    margin: 0px 5px;
+    max-width: 600px;
+  }
+  .menu {
+    max-width: 600px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+  .header_img img {
+    overflow: hidden;
+  }
+}
+
+.login_block {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: "MotserratBold";
+}
+.sign_block {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  font-family: "MotserratBold";
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+.header_title h1 {
+  font-family: "MotserratBold";
+  font-size: 52px;
+  color: white;
+  text-align: center;
+  padding-top: 215px;
+  text-transform: uppercase;
+}
+.header_text {
+  font-family: "Roboto";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.header_button {
+  font-size: 14px;
+  color: white;
+  font-family: "MotserratBold";
+  background-color: #ff4e50;
+  padding: 14px 20px;
+  border-radius: 20px;
+  width: 181px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 770px) {
+  header {
+    margin: 0px 50px;
+    max-width: 1440px;
+  }
+  .header_logo {
+    margin-left: 0px;
+  }
+}
+.block_title {
+  font-family: "MotserratBold";
+  font-size: 22px;
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 100px;
+}
+.content_row {
+  display: flex;
+  margin-top: 40px;
+  max-width: 940px;
+  justify-content: center;
+}
+@media screen and (max-width: 320px) {
+  .header_logo {
+    margin-top: 120px;
+    width: 320px;
+    text-align: center;
+    margin-left: -15px;
+  }
+  .header_text{
+    font-size: 18px;
+    width: 230px;
+  }
+  .header_title h1 {
+    font-size: 30px;
+  }
+  body {
+    max-width: 600px;
+    overflow: hidden;
+  }
+  header {
+    margin: 0px 5px;
+    max-width: 600px;
+  }
+  .menu {
+    max-width: 600px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+  .header_img img {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 770px) {
+  .block_title {
+    width: 750px;
+  }
+  .content_row {
+    width: 705px;
+  }
+  .second_row {
+    flex-wrap: wrap;
+  }
+  .content_row_block2 {
+    width: 250px;
+    margin-top: 20px;
+  }
+  .menu {
+    margin-right: 0px;
+  }
+}
+.content_row_block {
+  display: block;
+}
+
+@media screen and (max-width: 770px) {
+  .content {
+    margin: 0px;
+  }
+  .content_row_block {
+    max-width: 230px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  .content_row_block_img {
+    max-width: 230px;
+    height: 400px;
+    overflow: hidden;
+  }
+}
+
+.content_row_block_img {
+  border-radius: 4px;
+}
+.row_block_content {
+  position: absolute;
+  margin-top: 210px;
+}
+@media screen and (max-width: 770px) {
+  .row_block_content {
+    margin-top: 200px;
+  }
+}
+.step_block {
+  margin-bottom: 20px;
+  font-family: "Montserrat-Regular";
+  font-size: 10px;
+  background-color: #ff4e50;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  width: 46px;
+}
+.row_block_title {
+  font-size: 24px;
+  font-family: "MotserratBold";
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.block_text {
+  font-family: "Roboto";
+  font-size: 14px;
+  width: 270px;
+  color: white;
+  padding: 0px 15px;
+  opacity: 0.7;
+}
+.margin_top {
+  padding-top: 28px;
+}
+@media screen and (max-width: 770px) {
+  .content_row_block_img {
+    width: 235px;
+  }
+  .block_text {
+    width: 200px;
+  }
+}
+.row_block_icon {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 135px;
+}
+.row_block_title2 {
+  color: black;
+  font-family: "MotserratBold";
+  font-size: 14px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.row_block_text_2 {
+  font-family: "Roboto";
+  font-size: 14px;
+  width: 220px;
+  text-align: center;
+}
+.block_margin {
+  margin: 0px 8px;
+  width: 220px;
+}
+.content_row_block2 {
+  display: flex;
+  flex-direction: column;
+}
+.row_button {
+  font-family: "MotserratBold";
+  font-size: 14px;
+  color: #ff4e50;
+  border-radius: 20px;
+  border: 2px solid #ff4e50;
+  width: 133px;
+  padding: 12px 27px;
+  margin-top: 40px;
+}
+.row_button:hover {
+  background-color: #ff4e50;
+  color: white;
+  cursor: pointer;
+}
+.img_block {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-left: 230px;
+}
+.image_block_row {
+  display: flex;
+  margin-top: 20px;
+  width: 960px;
+}
+.img_block_image_short {
+  width: 300px;
+}
+.img_block_image {
+  width: 620px;
+}
+@media screen and (max-width: 770px) {
+  .img_block {
+    margin-left: 0px;
+    width: 705px;
+  }
+  .img_block_image_short {
+    overflow: hidden;
+  }
+  .image_block_row {
+    width: 745px;
+  }
+  .content_row_img3 {
+    overflow: hidden;
+    width: 235px;
+    border-radius: 4px;
+  }
+  .row_img3 {
+    width: 485px;
+  }
+}
+.image_block_text {
+  position: absolute;
+  font-family: "MotserratBold";
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.short {
+  width: 300px;
+  height: 310px;
+}
+.long {
+  width: 620px;
+  height: 310px;
+}
+@media screen and (max-width: 770px) {
+  .short {
+    width: 235px;
+  }
+  .long {
+    width: 485px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .block_title{
+    width: 300px;
+  }
+  .content_row{
+    flex-direction: column;
+    width: 320px;
+    justify-content: center;
+  }
+  .content_row_block{
+    width: 300px;
+    margin-top: 20px;
+  }
+  .first_row{
+    margin-left: 25px;
+  }
+  .image_block_row{
+    flex-direction: column;
+    width: 320px;
+    margin-top: 0px;
+  }
+  .img_block{
+    width: 320px;
+    margin-left: -10px;
+  }
+  .content_row_img3{
+    width: 300px;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .long{
+    width: 300px;
+    height: 120px;
+  }
+  .img_block_image{
+    margin-top: -60px;
+  }
+  .img_block_image_short{
+    margin-top: -60px;
+  }
+  .short{
+    width: 300px;
+    height: 120px;
+  }
+}
+
+.form_title {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: black;
+  margin-top: 40px;
+  text-align: center;
+}
+.form_input {
+  width: 225px;
+  height: 40px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Roboto";
+  padding-left: 15px;
+  margin-bottom: 100px;
+}
+.form_submit {
+  outline: none;
+  background-color: #ff4e50;
+  border: none;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-family: "MotserratBold";
+  cursor: pointer;
+}
+.form_submit:hover {
+  background-color: white;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+}
+form {
+  margin-top: 40px;
+  display: flex;
+  width: 420px;
+}
+footer {
+  width: 100%;
+  border-top: 4px solid #ff4e50;
+  padding-top: 40px;
+}
+.footer_logo {
+  font-size: 16px;
+  font-family: "MotserratBold";
+  color: #ff4e50;
+  text-transform: uppercase;
+  margin-left: 0px;
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+    .form_input{
+      margin-bottom: 20px;
+    }
+  }
+
+@media screen and (max-width: 1440px) {
+  .footer_logo {
+    margin-left: 20px;
+  }
+}
+.footer_block_title {
+  font-size: 14px;
+  font-family: "MotserratBold";
+  color: black;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.footer_block_item {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: black;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.footer_wrapper {
+  display: flex;
+}
+.footer_block_two {
+  margin-right: 0px;
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  footer{
+    margin-top: 40px;
+  }
+  .footer_wrapper {
+    display: flex;
+    width: 300px;
+    margin-left: 0px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer_logo{
+    width: 300px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .footer_block{
+    display: flex;
+  }
+  .footer_block_title{
+    position: absolute;
+    width: 300px;
+  }
+  .footer_first{
+    margin-left: -55px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer_block_item{
+    margin: 30px 5px 0px 5px;
+  }
+  .footer_sec{
+    margin-left: -32px;
+    margin-top: 15px;
+  }
+  .footer_block_two{
+    margin-top: 50px;
+    margin-left: 85px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .footer_block_two {
+    margin-right: 20px;
+  }
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "Montserrat-Regular";
+}
+@font-face {
+  src: url(../fonts/MotserratBold.ttf);
+  font-family: "MotserratBold";
+}
+@font-face {
+  src: url(../fonts/Roboto.ttf);
+  font-family: "Roboto";
+}
